@@ -1,17 +1,17 @@
-import Link from 'next/link';
-import { Button } from './ui/button';
-import { Download, Send } from 'lucide-react';
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { Download, Send } from "lucide-react";
 import {
    RiBriefcase4fill,
    RiTeamFill,
    RiTodoFill,
    RiArrowDownSLine,
-} from 'react-icons/ri';
+} from "react-icons/ri";
 
 //components
-import DevImg from './DevImg';
-import Socials from './Socials';
-import Badge from './Badge';
+import DevImg from "./DevImg";
+import Socials from "./Socials";
+import Badge from "./Badge";
 
 const Hero = () => {
    return (
@@ -40,10 +40,21 @@ const Hero = () => {
                      </Button>
                   </div>
                   {/* socials */}
-                  <Socials />
+                  <Socials
+                     containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+                     iconsStyles="text-foreground text--[22px] hover:text-primary transition-all"
+                  />
                </div>
                {/* image */}
-               <div className="hidden xl:flex relative">imagen</div>
+               <div className="hidden xl:flex relative">
+                  {/* Badge 1 */}
+                  <Badge icon={<RiBriefcase4fill />} />
+                  <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+                  <DevImg
+                     containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+                     imgSrc="/hero/developer.png"
+                  />
+               </div>
             </div>
             {/* icon */}
             <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
