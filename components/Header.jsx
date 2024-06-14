@@ -10,9 +10,9 @@ import MobileNav from './MobileNav';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
-   const [header, setHeader] = useState(false);
+   /*    const [header, setHeader] = useState(false);
    const pathname = usePathname();
-   console.log(pathname);
+   console.log(pathname); */
 
    return (
       <header>
