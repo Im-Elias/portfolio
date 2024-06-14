@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import {
-   RiBriefcase4fill,
-   RiTeamFill,
+   RiBriefcase4Fill,
+   RiGitRepositoryCommitsFill,
    RiTodoFill,
    RiArrowDownSLine,
 } from "react-icons/ri";
@@ -48,7 +48,35 @@ const Hero = () => {
                {/* image */}
                <div className="hidden xl:flex relative">
                   {/* Badge 1 */}
-                  <Badge icon={<RiBriefcase4fill />} />
+                  <Badge
+                     containerStyles="absolute top-[24%] -left-[5rem]"
+                     icon={<RiBriefcase4Fill />}
+                     endCountNum={3}
+                     badgeText="Años desempleado"
+                  />
+                  {/* Badge 2 */}
+                  <Badge
+                     containerStyles="absolute top-[80%] -left-[1rem]"
+                     icon={<RiTodoFill />}
+                     endCountNum={0}
+                     endCountText="k"
+                     badgeText={
+                        <span className="text-sm leading-none">
+                           Proyectos Terminados
+                        </span>
+                     }
+                  />
+                  {/* Badge 3 */}
+                  <Badge
+                     containerStyles="absolute top-[55%] -right-8"
+                     icon={<RiGitRepositoryCommitsFill />}
+                     endCountNum={140}
+                     badgeText={
+                        <span className="text-sm leading-none">
+                           Code Commits
+                        </span>
+                     }
+                  />
                   <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
                   <DevImg
                      containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
