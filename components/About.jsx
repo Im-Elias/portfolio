@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Desafio Latam",
+    text: "Talento Digital - Desafio Latam",
   },
   {
     icon: <HomeIcon size={20} />,
