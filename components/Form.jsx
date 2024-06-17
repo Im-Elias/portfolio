@@ -32,7 +32,8 @@ const Form = () => {
       setEmail("");
       setMessage("");
     } else {
-      console.error("Error sending email:", response.status);
+      /* console.error("Error sending email:", response.status); */
+
       alert("Error sending email. Please try again later.");
     }
   };
