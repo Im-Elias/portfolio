@@ -5,11 +5,13 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { User, MailIcon, ArrowRightIcon, MessageSquare } from "lucide-react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const router = useRouter();
 
   const sendMail = async (e) => {
     e.preventDefault();
@@ -21,17 +23,16 @@ const Form = () => {
     });
 
     if (response.ok) {
-      // Email sent successfully
-      const data = await response.json(); // Parse JSON only if successful
-      console.log("Email sent successfully:", data);
-      // You can optionally reset the form here
+      const data = await response.json();
+
+      //redirect to success page
+      router.push("/success");
+
       setName("");
       setEmail("");
       setMessage("");
     } else {
-      // Handle error response
       console.error("Error sending email:", response.status);
-      // Display an error message to the user
       alert("Error sending email. Please try again later.");
     }
   };
