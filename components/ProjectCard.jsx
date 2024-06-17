@@ -27,7 +27,12 @@ const ProjectCard = ({ project }) => {
             <Link
               href={project.github}
               className=" bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300">
-              <Image src="/work/github.svg" width={24} height={24} />
+              <Image
+                src="/work/github.svg"
+                width={24}
+                height={24}
+                alt="github logo"
+              />
             </Link>
           </div>
         </div>

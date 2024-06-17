@@ -19,7 +19,21 @@ const Form = () => {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ name, email, message }),
     });
-    console.log(await response.json());
+
+    if (response.ok) {
+      // Email sent successfully
+      const data = await response.json(); // Parse JSON only if successful
+      console.log("Email sent successfully:", data);
+      // You can optionally reset the form here
+      setName("");
+      setEmail("");
+      setMessage("");
+    } else {
+      // Handle error response
+      console.error("Error sending email:", response.status);
+      // Display an error message to the user
+      alert("Error sending email. Please try again later.");
+    }
   };
 
   return (
