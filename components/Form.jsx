@@ -26,7 +26,7 @@ const Form = () => {
       const data = await response.json();
 
       //redirect to success page
-      router.push("/success");
+      router.push("/success-form");
 
       setName("");
       setEmail("");

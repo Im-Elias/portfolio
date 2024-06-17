@@ -17,58 +17,22 @@ import ProjectCard from "./ProjectCard";
 
 const projectsData = [
   {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Lumina Website",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
+    image: "/work/hippomarket.png",
     category: "fullstack",
-    name: "Serenity Website",
+    name: "Hippo Marketplace",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
+      "Marketplace de recursos digitales. Next.js, React, tRPC, Tailwind CSS, Shadcn UI.",
+    link: "https://github.com/Im-Elias/HippoMarket",
+    github: "https://github.com/Im-Elias/HippoMarket",
   },
   {
-    image: "/work/1.png",
+    image: "/work/portfolio.png",
     category: "next js",
-    name: "Soltice Website",
+    name: "Mi Portafolio",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Stark Website",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Swift Website",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas.",
-    link: "/",
-    github: "/",
+      "Portafolio creado con Next.js, React, Tailwind CSS y Shadcn UI.",
+    link: "https://josue-gallardo-portfolio.vercel.app/",
+    github: "https://github.com/Im-Elias/portfolio",
   },
 ];
 
