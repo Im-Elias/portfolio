@@ -44,7 +44,7 @@ const projectsData = [
     github: "/",
   },
   {
-    image: "/work/5.png",
+    image: "/work/1.png",
     category: "next js",
     name: "Soltice Website",
     description:
@@ -89,7 +89,7 @@ const Work = () => {
         {/* slider */}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px] bg-pink-100"
+            className="h-[480px]"
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -97,7 +97,7 @@ const Work = () => {
               },
             }}
             spaceBetween={30}
-            modules={Pagination}
+            modules={[Pagination]}
             pagination={{ clickable: true }}>
             {/* mostrar solo los primero 4 proyectos en el slider */}
             {projectsData.slice(0, 4).map((project, index) => {
