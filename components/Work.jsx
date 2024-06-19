@@ -16,7 +16,7 @@ import { Pagination } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 
 const projectsData = [
-  {
+  /* {
     image: "/work/hippomarket.png",
     category: "fullstack",
     name: "Hippo Marketplace",
@@ -24,7 +24,7 @@ const projectsData = [
       "Marketplace de recursos digitales. Next.js, React, tRPC, Tailwind CSS, Shadcn UI.",
     link: "https://github.com/Im-Elias/HippoMarket",
     github: "https://github.com/Im-Elias/HippoMarket",
-  },
+  }, */
   {
     image: "/work/bizi-izi.png",
     category: "next js / fullstack",
