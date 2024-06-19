@@ -26,6 +26,15 @@ const projectsData = [
     github: "https://github.com/Im-Elias/HippoMarket",
   },
   {
+    image: "/work/bizi-izi.png",
+    category: "next js / fullstack",
+    name: "Bizi Izi",
+    description:
+      "Tienda de bicicletas, practica de  Next.js 14, React, Tailwind CSS, Sanity CMS, Stripe.",
+    link: "https://bici-izi.vercel.app/",
+    github: "https://github.com/Im-Elias/bici-izi",
+  },
+  {
     image: "/work/portfolio.png",
     category: "next js",
     name: "Mi Portafolio",
